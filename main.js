@@ -176,9 +176,9 @@ try{
 			await delay(1999)
             console.log(chalk.yellow(`\n\n               ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
             console.log(color(`< ================================================== >`, 'cyan'))
-	        console.log(color(`\n${themeemoji} YT CHANNEL: Xeon`,'magenta'))
-            console.log(color(`${themeemoji} GITHUB: DGXeon `,'magenta'))
-            console.log(color(`${themeemoji} INSTAGRAM: @unicorn_xeon `,'magenta'))
+	        console.log(color(`\n${themeemoji} YT CHANNEL: S4 Salman YT`,'magenta'))
+            console.log(color(`${themeemoji} GITHUB: salmanytofficial `,'magenta'))
+            console.log(color(`${themeemoji} INSTAGRAM: @ahmmikun `,'magenta'))
             console.log(color(`${themeemoji} WA NUMBER: ${owner}`,'magenta'))
             console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
             await delay(1000 * 2) 
@@ -222,15 +222,16 @@ XeonLft = await getBuffer(ppuser)
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「  @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
-   └───────────────┈ ⳹`
+│『  *Hi..!! 🐦*  』
+└┬
+    ◎ 「  @${xeonName.split("@")[0]}  」
+    │ ➪  *Wᴇʟᴄᴏᴍᴇ Tᴏ*
+    ◎      ${metadata.subject} 
+    │ ➪  *Mᴇᴍʙᴇʀ :*
+    ◎      ${xmembers}th 
+    │ ➪   *Jᴏɪɴᴇᴅ :*
+    ◎      ${xtime} ${xdate}
+    └─────────────|`
 XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
  contextInfo:{
@@ -250,15 +251,16 @@ XeonBotInc.sendMessage(anu.id,
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗟𝗲𝗳𝘁 
-   │✑ ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xeonmembers}th
-   │✑  𝗧𝗶𝗺𝗲 : 
-   │✑  ${xeontime} ${xeondate}
-   └───────────────┈ ⳹`
+│『  *Gᴏᴏᴅʙʏᴇ..!! 🍁*  』
+└┬
+    ◎ 「 @${xeonName.split("@")[0]}  」
+    │ ➪  *Lᴇғᴛ ғʀᴏᴍ*
+    ◎      ${metadata.subject} 
+    │ ➪  *Mᴇᴍʙᴇʀ :*
+    ◎      ${xeonmembers}th
+    │ ➪   *Tɪᴍᴇ :*
+    ◎      ${xeontime} ${xeondate}
+    └─────────────||`
 XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
  contextInfo:{
