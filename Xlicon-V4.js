@@ -6662,6 +6662,7 @@ case 'blur':
             let latensie = speed() - timestampe
             let a = db.data.users[sender]
             let me = m.sender
+	    let mot = pickRandom(["⌬", "⏣", "❐", "❑", "➛", "✧", "✯"])
             let xmenu_oh = `
 ┌─❖
 │ *_Hi_* _Senpai_ 👋 
@@ -6837,7 +6838,18 @@ if (typemenu === 'v1') {
 }
 break
             case 'allmenu': {
-let xmenu_oh = `Hi ${pushname}${readmore}\n\n${allmenu(prefix, hituet)}`
+let xmenu_oh = `*_HI_*...👋🏻 *${pushname}*
+
+┌⟝———ᙍ ɪɴꜰᴏ ᙊ
+┃ *ʙᴏᴛ ɴᴀᴍᴇ* : ${botname}
+┃ *ᴘʟᴜɢɪɴs* : ${Xeonfeature()}
+┃ *ᴘʀᴇғɪx* :  [ ${prefix} ]
+┃ *ᴠᴇʀsɪᴏɴ* : 3.0.5
+┃ *ᴍᴏᴅᴇ* : ${XeonBotInc.public ? 'Public' : `Self`}
+┃ *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ɴᴏᴅᴇ_ᴊs
+┃ *ʜᴏsᴛ* : ᴋᴀʟɪʟɪɴᴜx
+└⟝————ᙍᙊ
+        \n${readmore}\n\n${allmenu(prefix, hituet)}`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XliconV4Media/theme/XliconImage.jpg'),
