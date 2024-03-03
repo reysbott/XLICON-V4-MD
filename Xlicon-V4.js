@@ -6677,7 +6677,7 @@ ${mot} 𝗕𝗼𝘁 : ${botname}
 ${mot} 𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${ownernumber}
 ${mot} 𝗣𝗿𝗲𝗳𝗶𝘅 :  [ ${xprefix} ]
 ${mot} 𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
-${mot} 𝗣𝗹𝘂𝗴𝗶𝗻𝘀: ${Xeonfeature()}
+${mot} 𝗣𝗹𝘂𝗴𝗶𝗻𝘀: ${xeonfeature()}
 ${mot} 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 ${mot} 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 ${mot} 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : *_SalmanSer Server_*
@@ -6842,7 +6842,7 @@ let xmenu_oh = `*_HI_*...👋🏻 *${pushname}*
 
 ┌⟝———ᙍ ɪɴꜰᴏ ᙊ
 ┃ *ʙᴏᴛ ɴᴀᴍᴇ* : ${botname}
-┃ *ᴘʟᴜɢɪɴs* : ${Xeonfeature()}
+┃ *ᴘʟᴜɢɪɴs* : ${xeonfeature()}
 ┃ *ᴘʀᴇғɪx* :  [ ${prefix} ]
 ┃ *ᴠᴇʀsɪᴏɴ* : 3.0.5
 ┃ *ᴍᴏᴅᴇ* : ${XeonBotInc.public ? 'Public' : `Self`}
