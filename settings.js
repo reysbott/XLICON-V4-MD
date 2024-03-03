@@ -19,14 +19,14 @@ global.socialm = "GitHub: salmanytofficial" //ur github or insta name
 global.location = "Pakistan, Lahore, Sabzazar" //ur location
 
 //new
-global.botname = 'XLICON-V4-MD' //ur bot name
+global.botname = 'XLICON-V3-MD' //ur bot name
 global.ownernumber = '923184070915' //ur owner number
 global.ownername = 'Salman Ahmad' //ur owner name
 global.websitex = "https://youtube.com/@s4salmanyt"
 global.wagc = "https://whatsapp.com/channel/0029VaINgEZK0IBaK1nDtE3f"
 global.themeemoji = '🏮'
 global.wm = "© Xʟɪᴄᴏɴ-Iɴᴄ"
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD11' //script link
+global.botscript = 'https://github.com/salmanytofficial/XLICON-V3-MD' //script link
 global.packname = "𝐆𝐎𝐉𝐎 𝐊𝐔𝐍"
 global.author = "ᗰᗩᗪE ᗷY 𝙎𝘼𝙇𝙈𝘼𝙉 𝘼𝙃𝙈𝘼𝘿"
 global.creator = "923184070915@s.whatsapp.net"
