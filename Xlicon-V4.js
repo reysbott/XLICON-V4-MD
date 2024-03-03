@@ -664,7 +664,7 @@ async function styletext(teks) {
             data2 = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${fileId}`)
             result = {
             status: 200,
-            author: 'DGXeon',
+            author: 'Salman Ser',
             url: "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + data2.data.result.file_path
             }
             xeonyresult.push(result)
@@ -2980,7 +2980,7 @@ break
                 break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 let me = m.sender
-let teks = `*「  ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nHi @${me.split('@')[0]} 👋\nDont forget to donate yeah🍜 👇 https://i.ibb.co/y6XmZ2b/donate.png`
+let teks = `*「  ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nHi @${me.split('@')[0]} 👋\nDont forget to donate yeah🍜 👇 https://i.ibb.co/SBXWb1R/donate.jpg`
 sendXeonBotIncMessage(from, { 
 text: teks,
 mentions:[sender],
@@ -3110,7 +3110,7 @@ break
                 XeonBotInc.sendMessage(m.chat, {
                     document: audio,
                     mimetype: 'audio/mp3',
-                    fileName: `dgxeon.mp3`
+                    fileName: `SalmanSer.mp3`
                 }, {
                     quoted: m
                 })
@@ -3236,7 +3236,7 @@ break
             }
             break
             case 'fliptext': {
-                if (args.length < 1) return replygcxeon(`Example:\n${prefix}fliptext dgxeon`)
+                if (args.length < 1) return replygcxeon(`Example:\n${prefix}fliptext SalmanSer`)
                 quere = args.join(" ")
                 flipe = quere.split('').reverse().join('')
                 replygcxeon(`\`\`\`「 FLIP TEXT 」\`\`\`\n*•> Normal :*\n${quere}\n*•> Flip :*\n${flipe}`)
@@ -4391,7 +4391,7 @@ if (!text) return replygcxeon(`Enter Instagram Username\n\nExample: ${prefix + c
 }
 break
 case 'ghstalk': case 'githubstalk':{
-if (!q) return replygcxeon(`Example ${prefix+command} DGXeon`)
+if (!q) return replygcxeon(`Example ${prefix+command} salmanytofficial`)
 await XeonStickWait()
 let githubstalk = require('./lib/scraper')
 aj = await githubstalk.githubstalk(`${q}`)
@@ -4494,7 +4494,7 @@ case 'spotify':{
             mimetype: 'audio/mpeg',
             ptt: true,
             waveform:  [100, 0, 100, 0, 100, 0, 100],
-            fileName: "dgxeon",
+            fileName: "SalmanSer",
             contextInfo: {
               mentionedJid: [m.sender],
               externalAdReply: {
@@ -6532,7 +6532,7 @@ if (!text) return replygcxeon('Please provide a song name')
 }
 break
 case 'ttp':
-if (args.length == 0) return reply(`Example: ${prefix + command} dgxeon`)
+if (args.length == 0) return reply(`Example: ${prefix + command} SalmanSer`)
 dgxeontks = args.join(" ")
 dgxeonvuff = await getBuffer(`https://vihangayt.me/maker/text2img?q=${dgxeontks}`)
 XeonBotInc.sendImageAsSticker(m.chat, dgxeonvuff, m, {
@@ -6541,7 +6541,7 @@ XeonBotInc.sendImageAsSticker(m.chat, dgxeonvuff, m, {
                     })
 break
 case 'attp':
-if (args.length == 0) return reply(`Example: ${prefix + command} dgxeon`)
+if (args.length == 0) return reply(`Example: ${prefix + command} SalmanSer`)
 dgxeontks2 = args.join(" ")
 dgxeonvuff2 = await getBuffer(`https://vihangayt.me/maker/text2gif?q=${dgxeontks2}`)
 XeonBotInc.sendImageAsSticker(m.chat, dgxeonvuff2, m, {
@@ -6662,58 +6662,71 @@ case 'blur':
             let latensie = speed() - timestampe
             let a = db.data.users[sender]
             let me = m.sender
-            let xmenu_oh = `┌─❖
-│ Hi 👋 
+            let xmenu_oh = `
+┌─❖
+│ *_Hi_* _Senpai_ 👋 
 └┬❖  ${pushname} 
-┌┤✑  ${xeonytimewisher} 😄${readmore} 
-│└────────────┈ ⳹
-│
-└─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 : ${botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${ownernumber}
-│𝗣𝗿𝗲𝗳𝗶𝘅 :  [ ${xprefix} ]
-│𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length} User
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${global.db.data.settings[botNumber].totalhit} Hit
-│𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝘁 : ${Object.keys(global.db.data.chats).length} Chat/Gc
-│
-└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊
-│𝗡𝗮𝗺𝗲 : ${pushname}
-│𝗡𝘂𝗺𝗯𝗲𝗿 : +${me.split('@')[0]}
-│𝗟𝗶𝗺𝗶𝘁 : ${a.limit}
-│𝗧𝗶𝘁𝗹𝗲 : ${a.title ? a.title : '-'}
-│𝗦𝗲𝗿𝗶𝗮𝗹: ${a.serialNumber}
-│
-└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
-│??𝗶𝗺𝗲 : ${xtime}
-│𝗗𝗮𝘁𝗲 : ${xdate}
-└┬───────────────── ⳹
-   │✑  Please Type The *MENU*
-   │✑  Given *BELOW*
-┌└─────────────┈ ⳹
-│❏${xprefix}allmenu
-│❏${xprefix}downloadmenu
-│❏${xprefix}funmenu
-│❏${xprefix}aimenu
-│❏${xprefix}groupmenu
-│❏${xprefix}ownermenu
-│❏${xprefix}photooxymenu
-│❏${xprefix}ephoto360menu
-│❏${xprefix}makermenu
-│❏${xprefix}animemenu
-│❏${xprefix}nsfwmenu
-│❏${xprefix}randomphotomenu
-│❏${xprefix}randomvideomenu
-│❏${xprefix}stickermenu
-│❏${xprefix}databasemenu
-│❏${xprefix}stalkermenu
-│❏${xprefix}bugmenu
-│❏${xprefix}othermenu
-└─────────────────┈ ⳹`
+ ✑  ${xeonytimewisher} 😄 
+  └────────────┈ ▱╼❲⭐❳
+${readmore}
+
+ ⏤͟͟͞͞★ 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑 ꗄ➺
+ 
+${mot} 𝗕𝗼𝘁 : ${botname}
+${mot} 𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${ownernumber}
+${mot} 𝗣𝗿𝗲𝗳𝗶𝘅 :  [ ${xprefix} ]
+${mot} 𝗠𝗼𝗱𝗲 : ${XliconBotInc.public ? 'Public' : `Self`}
+${mot} 𝗣𝗹𝘂𝗴𝗶𝗻𝘀: ${Xliconfeature()}
+${mot} 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+${mot} 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+${mot} 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : *_SalmanSer Server_*
+${mot} 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+${mot} 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length} User
+${mot} 𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${global.db.data.settings[botNumber].totalhit} Hit
+${mot} 𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝘁 : ${Object.keys(global.db.data.chats).length} Chat/Gc
+
+
+ ⏤͟͟͞͞★ 𝐈𝐍𝐅𝐎 𝐔𝐒𝐄𝐑 ꗄ➺
+
+${mot} 𝗡𝗮𝗺𝗲 : ${pushname}
+${mot} 𝗡𝘂𝗺𝗯𝗲𝗿 : +${me.split('@')[0]}
+${mot} 𝗟𝗶𝗺𝗶𝘁 : ${a.limit}
+${mot} 𝗧𝗶𝘁𝗹𝗲 : ${a.title ? a.title : '-'}
+${mot} 𝗦𝗲𝗿𝗶𝗮𝗹: ${a.serialNumber}
+
+ 
+⏤͟͟͞͞★ 𝐓𝐈𝐌𝐄 𝐈𝐍𝐅𝐎 ꗄ➺ 
+
+${mot} 𝗧𝗶𝗺𝗲 : ${xtime}
+${mot} 𝗗𝗮𝘁𝗲 : ${xdate}
+
+⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕
+   
+│✑  Please Type The *MENU*
+│✑  Given *BELOW*
+   
+    『 *_MENU_* 』
+    
+╭⏤͟͟͞͞★
+│➛ ${xprefix}ᴀʟʟᴍᴇɴᴜ
+│➛ ${xprefix}ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ
+│➛ ${xprefix}ғᴜɴᴍᴇɴᴜ
+│➛ ${xprefix}ᴀɪᴍᴇɴᴜ
+│➛ ${xprefix}ɢʀᴏᴜᴘᴍᴇɴᴜ
+│➛ ${xprefix}ᴏᴡɴᴇʀᴍᴇɴᴜ
+│➛ ${xprefix}ᴘʜᴏᴛᴏᴏxʏᴍᴇɴᴜ
+│➛ ${xprefix}ᴇᴘʜᴏᴛᴏ360ᴍᴇɴᴜ
+│➛ ${xprefix}ᴍᴀᴋᴇʀᴍᴇɴᴜ
+│➛ ${xprefix}ᴀɴɪᴍᴇᴍᴇɴᴜ
+│➛ ${xprefix}ɴsғᴡᴍᴇɴᴜ
+│➛ ${xprefix}ʀᴀɴᴅᴏᴍᴘʜᴏᴛᴏᴍᴇɴᴜ
+│➛ ${xprefix}ʀᴀɴᴅᴏᴍᴠɪᴅᴇᴏᴍᴇɴᴜ
+│➛ ${xprefix}sᴛɪᴄᴋᴇʀᴍᴇɴᴜ
+│➛ ${xprefix}ᴅᴀᴛᴀʙᴀsᴇᴍᴇɴᴜ
+│➛ ${xprefix}sᴛᴀʟᴋᴇʀᴍᴇɴᴜ
+│➛ ${xprefix}ʙᴜɢᴍᴇɴᴜ
+│➛ ${xprefix}ᴏᴛʜᴇʀᴍᴇɴᴜ
+╰▱╼❲⭐❳`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XliconV4Media/theme/XliconImage.jpg'),
@@ -6747,7 +6760,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -6804,7 +6817,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -6858,7 +6871,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -6915,7 +6928,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -6969,7 +6982,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7026,7 +7039,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7080,7 +7093,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7137,7 +7150,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7191,7 +7204,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7248,7 +7261,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7302,7 +7315,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7359,7 +7372,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7413,7 +7426,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7470,7 +7483,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7524,7 +7537,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7581,7 +7594,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7635,7 +7648,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7692,7 +7705,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7746,7 +7759,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7803,7 +7816,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7857,7 +7870,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -7914,7 +7927,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -7968,7 +7981,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8025,7 +8038,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -8079,7 +8092,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8136,7 +8149,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -8190,7 +8203,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8247,7 +8260,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -8301,7 +8314,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8358,7 +8371,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -8412,7 +8425,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8469,7 +8482,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -8523,7 +8536,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8580,7 +8593,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -8634,7 +8647,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8691,7 +8704,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
@@ -8745,7 +8758,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v4') {
                     XeonBotInc.sendMessage(m.chat, {
-                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+                        video: fs.readFileSync('./XliconV4Media/theme/XliconVideo2.mp4'),
                         caption: xmenu_oh,
                         gifPlayback: true
                     }, {
@@ -8802,7 +8815,7 @@ if (typemenu === 'v1') {
                     })
                 } else if (typemenu === 'v8') {
                 	XeonBotInc.sendMessage(m.chat, {
-      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo.mp4'),
+      video: fs.readFileSync('./XliconV4Media/theme/XliconVideo3.mp4'),
       gifPlayback: true,
       caption: xmenu_oh,
       contextInfo: {
