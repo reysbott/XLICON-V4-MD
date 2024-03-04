@@ -11,7 +11,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //session
-global.sessionid ='XLICON-V4-DUZXz16Y'
+global.sessionid ='dgxeon-D7AtZu3s'
 
 //owmner v card
 global.ytname = "YT: S4 Salman YT" //ur yt chanel name
